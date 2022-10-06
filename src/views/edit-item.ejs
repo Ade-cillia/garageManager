@@ -15,6 +15,7 @@
                 <h3>MODIFICATION D'UNE VOITURE</h3>
             </div>
             <div class="card-content mt-3">
+                <a href="/" type="button" id="returnHome" class="btn btn-dark" >Retour</a>
                 <div id="erreur" class="alert alert-danger mt-3" <%= !locals.errorMessage && "hidden" %> >
                     <% locals.errorMessage && errorMessage.forEach(function(error,ierror){ %>
                         <p><%= error %></p>
@@ -49,7 +50,7 @@
 
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button type="submit" id="edit-car-submit" class="btn btn-dark btn-lg btn-block">MODIFIER</button>
-                    </div>
+                    </div> 
                 </form>
             </div>
         </div>

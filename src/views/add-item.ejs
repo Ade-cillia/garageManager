@@ -15,6 +15,7 @@
                 <h3>AJOUT D'UNE VOITURE</h3>
             </div>
             <div class="card-content mt-3">
+                <a href="/" type="button" id="returnHome" class="btn btn-dark" >Retour</a>
                 <form class="card-body" id="new-car-form" method="post" action="/car/new">
                     <div id="erreur" class="alert alert-danger mt-3" <%= !locals.errorMessage && "hidden" %> >
                         <% locals.errorMessage && errorMessage.forEach(function(error,ierror){ %>
