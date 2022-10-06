@@ -48,7 +48,7 @@ async function main() {
 
   // Handlers
   app.use((req : express.Request, res: express.Response) => {
-    res.status(404).json("URL Not Found");
+    res.render('404');
   });
 
   // Listener App

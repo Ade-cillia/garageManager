@@ -50,7 +50,7 @@ router.get('/car/edit/:carId', async (req : Request, res: Response): Promise<voi
 */
 router.post('/car/edit/:carId', async (req : Request, res: Response): Promise<void> => {
     let carId = req.params.carId;
-    let car = await Car.findById(req.params.carId).catch(error => {
+    let car = await Car.findById(carId).catch(error => {
         res.redirect("/");
     });
     

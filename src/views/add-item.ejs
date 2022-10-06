@@ -23,30 +23,30 @@
                         <% }) %>
                     </div>       
                     <div class="mb-3">
-                        <label for="brandName" class="form-label">Marque</label>
+                        <label for="brandName" class="form-label">Marque*</label>
                         <input type="text" class="form-control" name="brandName" id="brandName" placeholder="Nom de la marque" value=<%= locals.lastData?.brandName && lastData.brandName %>>
                     </div>
 
                     <div class="mb-3">
-                        <label for="modelName" class="form-label">Model</label>
+                        <label for="modelName" class="form-label">Model*</label>
                         <input type="text" class="form-control" name="modelName" id="modelName" placeholder="Nom du model" value=<%= locals.lastData?.modelName && lastData?.modelName%>>
                     </div>
 
                     <div class="mb-3">
-                        <label for="modelEnergy" class="form-label">Model energétique</label>
+                        <label for="modelEnergy" class="form-label">Model energétique*</label>
                         <input type="text" class="form-control" name="modelEnergy" id="modelEnergy" placeholder="Model energétique" value=<%=locals.lastData?.modelEnergy && lastData?.modelEnergy%>>
                     </div>
                     
                     <div class="mb-3">
-                        <label for="modelPrice" class="form-label">Prix</label>
+                        <label for="modelPrice" class="form-label">Prix*</label>
                         <input type="number" min="0" step=".01" class="form-control" name="modelPrice" id="modelPrice" placeholder="Prix de la voiture" value=<%=locals.lastData?.modelPrice && lastData?.modelPrice%>>
                     </div>
                     <div class="mb-3">
-                        <label for="dateBuy" class="form-label">Date d'achat</label>
+                        <label for="dateBuy" class="form-label">Date d'achat*</label>
                         <br>
                         <input type="date" name="dateBuy" id="dateBuy" value=<%=locals.lastData?.dateBuy && lastData?.dateBuy%>>
                     </div>
-
+                    <p>* = champs requis</p>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button type="submit" id="new-car-submit" class="btn btn-dark btn-lg btn-block">AJOUTER</button>
                     </div>
